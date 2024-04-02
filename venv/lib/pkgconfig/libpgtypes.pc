@@ -1,0 +1,9 @@
+Name: libpgtypes
+Description: PostgreSQL libpgtypes library
+Url: http://www.postgresql.org/
+Version: 12.17
+Requires: 
+Requires.private: 
+Cflags: -I/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/include
+Libs: -L/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/lib -lpgtypes
+Libs.private: -L/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/lib -lpgcommon -lpgport -lm

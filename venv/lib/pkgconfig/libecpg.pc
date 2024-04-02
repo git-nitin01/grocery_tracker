@@ -1,0 +1,9 @@
+Name: libecpg
+Description: PostgreSQL libecpg library
+Url: http://www.postgresql.org/
+Version: 12.17
+Requires: 
+Requires.private: libpq libpgtypes
+Cflags: -I/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/include
+Libs: -L/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/lib -lecpg
+Libs.private: -L/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/lib -lpgcommon -lpgport -lm

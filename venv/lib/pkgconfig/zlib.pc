@@ -1,0 +1,13 @@
+prefix=/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv
+exec_prefix=/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv
+libdir=/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/lib
+sharedlibdir=/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/lib
+includedir=/Users/nitinbawa/Documents/GitHub/grocery_tracker/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

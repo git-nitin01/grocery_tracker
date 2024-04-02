@@ -1,0 +1,2 @@
+[pbr.config.drivers]
+plain = pbr.cfg.driver:Plain
