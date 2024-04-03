@@ -51,5 +51,3 @@ Contributions are welcome! If you would like to contribute to this project, plea
 - Veryfi OCR - OCR service for extracting information from images
 
 - FastAPI - Backend framework for API development
-
-- Feel free to customize this README to fit your project's specific needs.
