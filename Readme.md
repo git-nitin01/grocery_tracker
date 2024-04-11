@@ -1,10 +1,9 @@
-Project Name
-License
+# Grocery Tracker App
 
-# Description
+## Description
 This project is a web application that allows users to update their grocery data. It provides a simple and user-friendly interface for managing grocery information.
 
-# Features
+## Features
 
 User authentication: Users can create an account and log in to access their grocery data.
 
@@ -14,7 +13,7 @@ Secure data storage: User data is securely stored in a database to ensure privac
 
 Responsive design: The application is designed to be responsive and accessible on different devices and screen sizes.
 
-# Installation
+## Installation
 
 Clone the repository: git clone https://github.com/username/project.git
 
@@ -24,7 +23,7 @@ Set up the backend: uvicorn request_api:app --reload
 
 Start the development server: streamlit run app.py
 
-# Usage
+## Usage
 
 - Open the application in your web browser.
 
@@ -37,12 +36,12 @@ Start the development server: streamlit run app.py
 - Upload Image and select whether to create new data or update existing
 
 
-# Contributing
+## Contributing
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 
 
 
-# Acknowledgements
+## Acknowledgements
 
 - Streamlit - The web framework used for the user interface
 
@@ -51,5 +50,3 @@ Contributions are welcome! If you would like to contribute to this project, plea
 - Veryfi OCR - OCR service for extracting information from images
 
 - FastAPI - Backend framework for API development
-
-- Feel free to customize this README to fit your project's specific needs.
