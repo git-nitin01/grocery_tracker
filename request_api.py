@@ -12,6 +12,7 @@ class Data(BaseModel):
     quantity: list
     total: list
     last_purchased: list
+    frequency: list
 
 # Create a MongoDB client
 client = MongoClient("mongodb://localhost:27017/")
@@ -88,7 +89,8 @@ async def extract_data(image, client_id, client_secret, username, api_key):
         'last_purchased': [buy_date]*len(data["line_items"]),
         'total': [],
         'items': [],
-        'quantity': []
+        'quantity': [],
+        'frequency': [1]*len(data["line_items"])
     }
 
     for item in data["line_items"]:
@@ -117,7 +119,8 @@ async def get_grocery_list(username):
         "items": data["items"],
         "quantity": data["quantity"],
         "total": data["total"],
-        "last_purchased": data["last_purchased"]
+        "last_purchased": data["last_purchased"],
+        "frequency": data["frequency"]
     }
     return grocery_list
 
@@ -169,6 +172,7 @@ async def update_grocery_list(user_name, data: Data):
                 
                 else:
                     index = existing_data["items"].index(data["items"][i])
+                    existing_data["frequency"][index] += 1
                     existing_data["quantity"][index] += data["quantity"][i]
                     existing_data["total"][index] += data["total"][i]
                     existing_data["last_purchased"][index] = data["last_purchased"][i]
@@ -176,6 +180,7 @@ async def update_grocery_list(user_name, data: Data):
                 existing_data["items"].append(data["items"][i])
                 existing_data["quantity"].append(data["quantity"][i])
                 existing_data["total"].append(data["total"][i])
+                existing_data["frequency"].append(1)
                 existing_data["last_purchased"].append(data["last_purchased"][i])
 
         # update the collection
