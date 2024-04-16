@@ -1,0 +1,7 @@
+aiohttp==3.9.3
+fastapi==0.110.1
+pydantic==1.10.14
+pymongo==4.6.3
+streamlit==1.32.2
+streamlit_cropperjs==0.0.8
+veryfi==3.4.1
